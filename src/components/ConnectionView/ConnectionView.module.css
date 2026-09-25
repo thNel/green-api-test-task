@@ -1,0 +1,151 @@
+.view {
+  display: grid;
+  place-items: center;
+  padding: 48px clamp(28px, 7vw, 100px);
+}
+
+.card {
+  width: min(100%, 440px);
+}
+
+.icon {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background: #3390ec;
+  border-radius: 50%;
+}
+
+.card h1 {
+  margin: 0 0 12px;
+  color: #17212b;
+  font-size: 30px;
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  margin: 0 0 34px;
+  color: #707579;
+  line-height: 1.55;
+}
+
+.form,
+.field {
+  display: grid;
+}
+
+.form {
+  gap: 20px;
+}
+
+.field {
+  gap: 8px;
+  color: #17212b;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.field input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 50px;
+  padding: 0 14px;
+  color: #17212b;
+  background: #ffffff;
+  border: 1px solid #dfe1e5;
+  border-radius: 9px;
+}
+
+.field input:hover {
+  border-color: #a9b0b5;
+}
+
+.field input:focus {
+  border-color: #3390ec;
+}
+
+.field small {
+  color: #8b9398;
+  font-size: 11px;
+  font-weight: 450;
+}
+
+.passwordField {
+  position: relative;
+}
+
+.passwordField input {
+  padding-right: 50px;
+}
+
+.fieldAction {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  color: #707579;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fieldAction:hover {
+  color: #2b5278;
+  background: #f1f3f4;
+}
+
+.primaryButton {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 20px;
+  color: #ffffff;
+  background: #3390ec;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background: #2b82d0;
+}
+
+.primaryButton:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.error {
+  padding: 11px 13px;
+  color: #c24040;
+  background: #fff2f2;
+  border: 1px solid #ffd7d7;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.securityNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 25px;
+  color: #8b9398;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 850px) {
+  .view {
+    padding: 36px 24px;
+  }
+}

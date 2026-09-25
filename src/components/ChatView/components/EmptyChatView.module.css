@@ -1,0 +1,29 @@
+.empty {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  padding: 30px;
+  text-align: center;
+  background: #f4f6f8;
+}
+
+.mark { color: #3390ec; }
+
+.empty h1 {
+  margin: 18px 0 6px;
+  color: #17212b;
+  font-size: 22px;
+}
+
+.empty p {
+  margin: 0;
+  color: #8b9398;
+  font-size: 13px;
+}
+
+@media (max-width: 850px) {
+  .empty { display: none; }
+  .mobileVisible { display: grid; }
+}

@@ -1,0 +1,47 @@
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 12px;
+  text-align: left;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #f4f4f5;
+}
+
+.active,
+.active:hover {
+  background: #3390ec;
+}
+
+.copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.copy strong,
+.copy span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy strong {
+  color: #17212b;
+  font-size: 14px;
+}
+
+.copy span {
+  color: #8b9398;
+  font-size: 12px;
+}
+
+.active .copy strong,
+.active .copy span {
+  color: #ffffff;
+}

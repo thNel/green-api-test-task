@@ -1,0 +1,37 @@
+.search {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  box-sizing: border-box;
+  margin: 0 10px 8px;
+  padding: 0 11px;
+  color: #8b9398;
+  background: #f4f4f5;
+  border: 1px solid transparent;
+  border-radius: 9px;
+}
+
+.search:focus-within {
+  border-color: #3390ec;
+  background: #ffffff;
+}
+
+.search input {
+  min-width: 0;
+  flex: 1;
+  padding: 0;
+  color: #17212b;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+}
+
+.search input::placeholder {
+  color: #8b9398;
+}
+
+.search input:focus-visible {
+  outline: 0;
+}

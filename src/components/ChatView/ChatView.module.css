@@ -1,0 +1,33 @@
+.root {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  --chat-bg-color: #74c3ff;
+  --chat-bg-opacity: 0.18;
+  background: #6ebbf3;
+}
+
+.stage {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--chat-bg-color);
+}
+
+.wallpaper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--chat-bg-color) url('/assets/chat_bg-2.80514.png') repeat;
+  opacity: var(--chat-bg-opacity);
+  pointer-events: none;
+}
+
+@media (max-width: 850px) {
+  .root { display: none; }
+  .mobileVisible { display: grid; }
+}

@@ -1,0 +1,14 @@
+green.thnel.com {
+	root * /var/www/thNel.com/green
+	encode zstd gzip
+
+	route {
+		try_files {path} /index.html
+		header /index.html Cache-Control "public, max-age=0, must-revalidate"
+		file_server
+	}
+}
+
+www.green.thnel.com {
+	redir https://green.thnel.com{uri} permanent
+}

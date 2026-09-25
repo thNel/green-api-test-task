@@ -1,0 +1,25 @@
+.avatar {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  color: #ffffff;
+  background: #e17076;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.compact {
+  width: 42px;
+  height: 42px;
+  margin: 0 11px 0 2px;
+}

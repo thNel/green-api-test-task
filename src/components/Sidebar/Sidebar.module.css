@@ -1,0 +1,12 @@
+.root {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-right: 1px solid #dadce0;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
